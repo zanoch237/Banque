@@ -1,0 +1,34 @@
+# Dépendances Node.js
+node_modules/
+*/node_modules/
+.pnpm-store/
+
+# Variables d'environnement & Secrets
+.env
+.env.local
+.env.*.local
+*.env
+
+# Fichiers de build
+dist/
+dist-ssr/
+build/
+*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Fichiers système & IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db

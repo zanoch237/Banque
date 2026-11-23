@@ -1,0 +1,57 @@
+/* Import de la police Inter depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Styles globaux - importation de Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Styles de base personnalisés */
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-gray-50 text-gray-900 font-sans antialiased;
+  }
+
+  /* Style par défaut des liens */
+  a {
+    @apply transition-colors duration-200;
+  }
+}
+
+/* Composants réutilisables */
+@layer components {
+  /* Style de carte standard */
+  .carte {
+    @apply bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200;
+  }
+
+  /* Bouton primaire */
+  .btn-primaire {
+    @apply bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  /* Bouton secondaire */
+  .btn-secondaire {
+    @apply bg-white text-gray-700 border border-gray-300 px-4 py-2 rounded-lg font-medium hover:bg-gray-50 transition-colors duration-200;
+  }
+
+  /* Champ de formulaire */
+  .champ-formulaire {
+    @apply w-full border border-gray-300 rounded-lg px-3 py-2 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200;
+  }
+}
+
+/* Utilitaires personnalisés */
+@layer utilities {
+  /* Troncature sur 2 lignes */
+  .tronquer-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}

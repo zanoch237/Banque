@@ -1,0 +1,29 @@
+# Fichiers ignorés par Git - Backend
+
+# Variables d'environnement (contient des secrets !)
+.env
+
+# Dépendances Node.js
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Répertoire de build
+dist/
+build/
+
+# Cache système
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
